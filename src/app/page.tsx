@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/foto-profesional.jpg"
+              src="/foto-profesional.png"
               alt="Foto de perfil de Sady Enrique Maureria Ferrada"
               width={400}
               height={400}

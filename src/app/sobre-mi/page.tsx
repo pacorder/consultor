@@ -18,7 +18,7 @@ export default function SobreMiPage() {
         <div className="grid gap-16 md:grid-cols-3">
           <div className="flex flex-col items-center text-center md:col-span-1">
             <Image
-              src="/foto-profesional.jpg"
+              src="/foto-profesional.png"
               alt="Foto de perfil de Sady Enrique Maureria Ferrada"
               width={250}
               height={250}
