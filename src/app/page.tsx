@@ -8,7 +8,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { services, caseStudies, testimonials, methodology, blogPosts, profile } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const sadyProfileImage = PlaceHolderImages.find(p => p.id === 'sady-profile');
 const caseStudyImages = {
   '1': PlaceHolderImages.find(p => p.id === 'case-study-1'),
   '2': PlaceHolderImages.find(p => p.id === 'case-study-2'),
@@ -43,16 +42,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center">
-            {sadyProfileImage && (
-              <Image
-                src={sadyProfileImage.imageUrl}
-                alt={sadyProfileImage.description}
-                data-ai-hint={sadyProfileImage.imageHint}
-                width={400}
-                height={400}
-                className="rounded-full object-cover shadow-2xl"
-              />
-            )}
+            <Image
+              src="/foto-profesional.jpg"
+              alt="Sady Enrique Maureria Ferrada"
+              width={400}
+              height={400}
+              className="rounded-full object-cover shadow-2xl"
+            />
           </div>
         </div>
       </section>
