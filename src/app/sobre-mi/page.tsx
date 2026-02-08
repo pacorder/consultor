@@ -19,7 +19,7 @@ export default function SobreMiPage() {
           <div className="flex flex-col items-center text-center md:col-span-1">
             <Image
               src="/foto-profesional.jpg"
-              alt="Sady Enrique Maureria Ferrada"
+              alt="Foto de perfil de Sady Enrique Maureria Ferrada"
               width={250}
               height={250}
               className="rounded-full object-cover shadow-lg"
