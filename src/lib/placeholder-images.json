@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "sady-profile",
+      "description": "Professional headshot of Sady Maureria",
+      "imageUrl": "https://images.unsplash.com/photo-1568316674077-d72ee56de61c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzcwNDgwMjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "case-study-1",
+      "description": "Image representing a case study on process optimization",
+      "imageUrl": "https://images.unsplash.com/photo-1561471828-96e54774b225?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcHJvY2Vzc3xlbnwwfHx8fDE3NzA1MTUzNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial process"
+    },
+    {
+      "id": "case-study-2",
+      "description": "Image representing a case study on cost reduction",
+      "imageUrl": "https://images.unsplash.com/photo-1758271452953-46f4e12ae2fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjdG9yeSUyMGVmZmljaWVuY3l8ZW58MHx8fHwxNzcwNTE1Mzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "factory efficiency"
+    },
+    {
+      "id": "case-study-3",
+      "description": "Image representing a case study on quality management systems",
+      "imageUrl": "https://images.unsplash.com/photo-1551434678-e076c223a692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWFsaXR5JTIwYXNzdXJhbmNlfGVufDB8fHx8MTc3MDUxNTM3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quality assurance"
+    },
+    {
+      "id": "blog-1",
+      "description": "Image for a blog post about quality control",
+      "imageUrl": "https://images.unsplash.com/photo-1624957485467-f33854e1ad85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxxdWFsaXR5JTIwY29udHJvbHxlbnwwfHx8fDE3NzA0NzU3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quality control"
+    },
+    {
+      "id": "blog-2",
+      "description": "Image for a blog post about productivity",
+      "imageUrl": "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFtJTIwd29ya2luZ3xlbnwwfHx8fDE3NzA1MTUzNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team working"
+    },
+    {
+      "id": "blog-3",
+      "description": "Image for a blog post about process optimization",
+      "imageUrl": "https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc3MDQwMTk2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business strategy"
+    }
+  ]
 }
