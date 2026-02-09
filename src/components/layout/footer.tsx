@@ -4,7 +4,7 @@ import { navItems, profile } from '@/lib/data';
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/40 bg-card/20">
+    <footer className="border-t border-border/20 bg-background/30">
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="space-y-4 md:col-span-4">
@@ -25,7 +25,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <h3 className="mb-2 font-semibold font-headline">Navegación</h3>
             <ul className="space-y-2">
-              {navItems.slice(0, 5).map(item => (
+              {navItems.map(item => (
                 <li key={item.title}>
                   <Link href={item.href} className="text-sm text-muted-foreground hover:text-primary">
                     {item.title}
@@ -56,7 +56,7 @@ export function Footer() {
              <p className="text-sm text-muted-foreground">Santiago, Chile</p>
           </div>
         </div>
-        <div className="mt-8 border-t border-border/40 pt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border/20 pt-6 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} SEM Consultores. Todos los derechos reservados.</p>
         </div>
       </div>

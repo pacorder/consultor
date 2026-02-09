@@ -64,3 +64,10 @@ export type BlogPost = {
   date: string;
   author: string;
 };
+
+export type LinkedInPost = {
+  title: string;
+  summary: string;
+  url: string;
+  date: string;
+};

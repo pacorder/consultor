@@ -8,6 +8,7 @@ import type {
   Testimonial,
   BlogPost,
   NavItem,
+  LinkedInPost,
 } from '@/lib/types';
 import { Award, Briefcase, Check, Gem, ShieldCheck } from 'lucide-react';
 
@@ -18,6 +19,7 @@ export const navItems: NavItem[] = [
   { title: 'Casos de Éxito', href: '/casos-de-exito' },
   { title: 'Testimonios', href: '/testimonios' },
   { title: 'Blog', href: '/blog' },
+  { title: 'Publicaciones', href: '/publicaciones' },
   { title: 'Contacto', href: '/contacto' },
 ];
 
@@ -181,5 +183,26 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'La digitalización está transformando la manera en que aseguramos y controlamos la calidad. Analizamos el impacto de tecnologías como IoT, IA y Big Data en el campo del QA/QC.',
     date: '20 de Junio, 2024',
     author: 'Sady Maureria',
+  },
+];
+
+export const linkedinPosts: LinkedInPost[] = [
+  {
+    title: 'El Futuro de la Gestión de Calidad con IA',
+    summary: 'Exploramos cómo la Inteligencia Artificial está revolucionando los procesos de QA/QC, permitiendo un control más preciso y predictivo. La IA no es solo una herramienta, es un cambio de paradigma para alcanzar niveles de excelencia antes inimaginables.',
+    url: '#',
+    date: '25 de Agosto, 2024',
+  },
+  {
+    title: 'Sostenibilidad y Calidad: Un Binomio Inseparable',
+    summary: 'La gestión de calidad moderna no puede ignorar el impacto ambiental. En este post, discuto la sinergia entre las normas ISO 9001 e ISO 14001 para crear operaciones que no solo son eficientes y rentables, sino también responsables con nuestro planeta.',
+    url: '#',
+    date: '10 de Agosto, 2024',
+  },
+  {
+    title: 'Liderazgo en Tiempos de Transformación Digital',
+    summary: '¿Cómo liderar equipos de calidad en la era digital? Comparto 3 estrategias clave para fomentar una cultura de mejora continua y adaptación tecnológica en su organización, asegurando que su equipo no solo sobreviva, sino que prospere.',
+    url: '#',
+    date: '28 de Julio, 2024',
   },
 ];
