@@ -20,33 +20,34 @@ export default function CasosDeExitoPage() {
         <div className="space-y-16">
           {caseStudies.map((study, index) => {
             const image = getImageForCase(study.id);
+            const imageFirst = index % 2 !== 0;
             return (
-              <Card key={index} className="overflow-hidden">
-                <div className="grid md:grid-cols-2">
-                  <div className="p-6 md:p-8 flex flex-col justify-center">
+              <Card key={index} className="overflow-hidden bg-card/40 border-border/50">
+                <div className={`grid md:grid-cols-2 ${imageFirst ? 'md:grid-flow-col-dense' : ''}`}>
+                  <div className={`p-6 md:p-8 flex flex-col justify-center ${imageFirst ? 'md:col-start-2' : ''}`}>
                     <CardHeader className="p-0">
-                      <CardTitle className="text-2xl">{study.title}</CardTitle>
+                      <CardTitle className="font-headline text-2xl">{study.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="p-0 mt-4 space-y-4">
                       <div>
-                        <h3 className="font-semibold">El Problema</h3>
+                        <h3 className="font-semibold font-headline">El Problema</h3>
                         <p className="text-muted-foreground">{study.problem}</p>
                       </div>
                       <div>
-                        <h3 className="font-semibold">La Solución</h3>
+                        <h3 className="font-semibold font-headline">La Solución</h3>
                         <p className="text-muted-foreground">{study.solution}</p>
                       </div>
                       <div>
-                        <h3 className="font-semibold">El Resultado</h3>
+                        <h3 className="font-semibold font-headline">El Resultado</h3>
                         <p className="text-muted-foreground">{study.result}</p>
                       </div>
-                      <Badge variant="default" className="text-base py-2 px-4">
+                      <Badge variant="default" className="text-base py-2 px-4 bg-primary/10 text-primary border border-primary/20">
                         ROI: {study.roi}
                       </Badge>
                     </CardContent>
                   </div>
                   {image && (
-                    <div className="relative h-64 md:h-full">
+                    <div className={`relative h-80 md:h-full ${imageFirst ? 'md:col-start-1' : ''}`}>
                       <Image
                         src={image.imageUrl}
                         alt={image.description}

@@ -29,7 +29,7 @@ export default function BlogPage() {
                     {blogPosts.map((post) => {
                         const image = getImageForPost(post.slug);
                         return (
-                            <Card key={post.slug} className="flex flex-col overflow-hidden">
+                            <Card key={post.slug} className="flex flex-col overflow-hidden bg-card/40 border-border/50 transition-all hover:border-primary/30">
                                 {image && (
                                     <div className="relative h-48 w-full">
                                         <Image
@@ -43,14 +43,14 @@ export default function BlogPage() {
                                 )}
                                 <CardHeader>
                                     <Badge variant="secondary" className="w-fit">{post.category}</Badge>
-                                    <CardTitle className="pt-2">{post.title}</CardTitle>
+                                    <CardTitle className="pt-2 font-headline">{post.title}</CardTitle>
                                     <CardDescription>{post.date} por {post.author}</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-grow">
                                     <p className="text-muted-foreground">{post.excerpt}</p>
                                 </CardContent>
                                 <CardFooter>
-                                    <Button variant="link" asChild className="p-0">
+                                    <Button variant="link" asChild className="p-0 font-semibold">
                                         <Link href="#">
                                             Leer más <ArrowRight className="ml-2 h-4 w-4" />
                                         </Link>

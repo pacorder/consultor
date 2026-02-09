@@ -27,10 +27,10 @@ export default function TestimoniosPage() {
       <div className="container mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="flex flex-col">
+            <Card key={index} className="flex flex-col bg-card/40 border-border/50">
               <CardHeader className="flex-grow">
                 <StarRating rating={testimonial.rating} />
-                <CardTitle className="pt-4 text-lg font-normal leading-relaxed">
+                <CardTitle className="pt-4 text-lg font-normal leading-relaxed text-foreground/90">
                   "{testimonial.review}"
                 </CardTitle>
               </CardHeader>

@@ -14,7 +14,7 @@ export function Header() {
   const [isSheetOpen, setIsSheetOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -38,7 +38,7 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button asChild className="hidden lg:inline-flex">
+          <Button asChild className="hidden lg:inline-flex" variant="outline">
             <Link href="/contacto">Agendar Asesoría</Link>
           </Button>
 

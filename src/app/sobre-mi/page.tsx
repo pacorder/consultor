@@ -16,15 +16,16 @@ export default function SobreMiPage() {
 
       <div className="container mx-auto max-w-5xl px-4 py-16 md:px-6 md:py-24">
         <div className="grid gap-16 md:grid-cols-3">
-          <div className="flex flex-col items-center text-center md:col-span-1">
+          <div className="relative flex flex-col items-center text-center md:col-span-1">
+             <div className="absolute -inset-1 top-4 rounded-3xl bg-gradient-to-tr from-primary/70 to-primary/40 opacity-60 blur-2xl"></div>
             <Image
               src="/foto-profesional.png"
               alt="Foto de perfil de Sady Enrique Maureria Ferrada"
               width={250}
               height={250}
-              className="rounded-full object-cover shadow-lg"
+              className="relative rounded-2xl object-cover shadow-lg"
             />
-            <h2 className="mt-6 text-2xl font-bold">{profile.name}</h2>
+            <h2 className="mt-6 font-headline text-3xl font-bold">{profile.name}</h2>
             <p className="mt-1 text-muted-foreground">{profile.role}</p>
           </div>
           <div className="space-y-6 text-lg text-muted-foreground md:col-span-2">
@@ -41,13 +42,13 @@ export default function SobreMiPage() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <Award className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-bold">Certificaciones y Formación</h2>
+              <h2 className="font-headline text-3xl font-bold">Certificaciones y Formación</h2>
             </div>
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <Card key={index}>
+                <Card key={index} className="bg-card/40 border-border/50">
                   <CardHeader>
-                    <CardTitle className="text-xl">{cert.title}</CardTitle>
+                    <CardTitle className="font-headline text-xl">{cert.title}</CardTitle>
                     <div className="flex items-center justify-between text-sm text-muted-foreground">
                       <span>{cert.issuer}</span>
                       <Badge variant="secondary">{cert.year}</Badge>
@@ -62,13 +63,13 @@ export default function SobreMiPage() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <Briefcase className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-bold">Áreas de Especialización</h2>
+              <h2 className="font-headline text-3xl font-bold">Áreas de Especialización</h2>
             </div>
             <div className="space-y-4">
               {specializations.map((spec, index) => (
-                <Card key={index}>
+                <Card key={index} className="bg-card/40 border-border/50">
                   <CardHeader>
-                    <CardTitle className="text-xl">{spec.area}</CardTitle>
+                    <CardTitle className="font-headline text-xl">{spec.area}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{spec.description}</p>

@@ -4,13 +4,13 @@ import { navItems, profile } from '@/lib/data';
 
 export function Footer() {
   return (
-    <footer className="border-t bg-card">
+    <footer className="border-t border-border/40 bg-card/20">
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="space-y-4 md:col-span-4">
             <Link href="/" className="flex items-center space-x-2">
               <Briefcase className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">SEM Consultores</span>
+              <span className="font-headline text-xl font-bold">SEM Consultores</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               {profile.role}
@@ -23,7 +23,7 @@ export function Footer() {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h3 className="mb-2 font-semibold">Navegación</h3>
+            <h3 className="mb-2 font-semibold font-headline">Navegación</h3>
             <ul className="space-y-2">
               {navItems.slice(0, 5).map(item => (
                 <li key={item.title}>
@@ -35,14 +35,14 @@ export function Footer() {
             </ul>
           </div>
           <div className="md:col-span-2">
-             <h3 className="mb-2 font-semibold">Legal</h3>
+             <h3 className="mb-2 font-semibold font-headline">Legal</h3>
             <ul className="space-y-2">
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Política de Privacidad</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Términos de Servicio</Link></li>
             </ul>
           </div>
           <div className="space-y-4 md:col-span-4">
-            <h3 className="font-semibold">Contacto Directo</h3>
+            <h3 className="font-semibold font-headline">Contacto Directo</h3>
             <div className="space-y-2">
               <a href="mailto:sady.maureria@semconsultores.cl" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary">
                 <Mail className="h-4 w-4" />
@@ -56,7 +56,7 @@ export function Footer() {
              <p className="text-sm text-muted-foreground">Santiago, Chile</p>
           </div>
         </div>
-        <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border/40 pt-6 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} SEM Consultores. Todos los derechos reservados.</p>
         </div>
       </div>
